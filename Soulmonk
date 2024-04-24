@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1 style="text-align:center;">Как приручить дракона</h1>
+
+<p>Беззубик - 30-летний мужчина, Ночная фурия, появляющийся во франшизе "Как приручить дракона". Последняя известная Ночная фурия из существующих, Беззубик был драконьим ездовым животным и лучшим другом Иккинга Ужасного Хэддока III и короля драконов на Олухе.</p>
+
+<p> Он самый могущественный из известных драконов и известен Иккингу тем, что положил конец войне между викингами и драконами и объединил две расы вместе.</p>
+
+<button class="btn btn-primary" onclick="toggleImages()">Показать изображения</button>
+
+<table>
+<tr>
+<td>
+<img src="https://www.mirf.ru/wp-content/uploads/2023/02/toothless.jpg" class="img-fluid mt-3" alt="Пример изображения" width="400" height="300" style="display:none;">
+</td>
+<td>
+<img src="https://gas-kvas.com/grafic/uploads/posts/2023-09/1695828192_gas-kvas-com-p-kartinki-bezzubik-10.jpg" class="img-fluid mt-3" alt="Пример изображения" width="400" height="300" style="display:none;">
+</td>
+<td>
+<img src="https://gas-kvas.com/grafic/uploads/posts/2023-09/1695828187_gas-kvas-com-p-kartinki-bezzubik-1.jpg" class="img-fluid mt-3" alt="Пример изображения" width="350" height="250" style="display:none;">
+</td>
+</tr>
+</table>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.4.0/js/bootstrap.min.js"></script>
+<script>
+function toggleImages() {
+let images = document.querySelectorAll('img');
+images.forEach(img => {
+if (img.style.display === 'none') {
+img.style.display = 'block';
+} else {
+img.style.display = 'none';
+}
+});
+}
+</script>
+</body>
+</html>
+<span class="cursor"></span>
